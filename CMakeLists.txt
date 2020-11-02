@@ -11,5 +11,7 @@ set(GLFW_INSTALL OFF CACHE BOOL "" FORCE)
 
 
 add_subdirectory(Dependencies/GLFW)
+add_subdirectory(Dependencies/GLEW/build/cmake)
 
 target_link_libraries(${PROJECT_NAME} glfw)
+target_link_libraries(${PROJECT_NAME} glew)
